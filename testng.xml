@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+
+	<test name="Login Test" >
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.ddf.zoho.testcases.Logintest" />
+		</classes>
+	</test>
+	
+	<test name="Lead Test" >
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.ddf.zoho.testcases.LeadTest" />
+		</classes>
+	</test>
+	
+	<test name="Deals Test" >
+		<classes>
+			<class name="com.ddf.zoho.testcases.DealsTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,6 @@
+com\ddf\zoho\testcases\Logintest.class
+com\ddf\utility\ExtentManager.class
+com\ddf\zoho\testcases\DealsTest.class
+com\ddf\zoho\Base\Base.class
+com\zoho\temp\DateandsimpedateFormat.class
+com\ddf\zoho\testcases\LeadTest.class

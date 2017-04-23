@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Deals Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.ddf.zoho.testcases.DealsTest">
+        <methods>
+          <include name="CreateDealTest" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.ddf.zoho.testcases.DealsTest -->
+    </classes>
+  </test> <!-- Deals Test(failed) -->
+  <test name="Login Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.ddf.zoho.testcases.Logintest">
+        <methods>
+          <include name="teardown"/>
+          <include name="doLoginTest" invocation-numbers="1 0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.ddf.zoho.testcases.Logintest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Lead Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ddf.zoho.testcases.LeadTest">
+        <methods>
+          <include name="CreateLeadTest" invocation-numbers="1 2 3 0"/>
+          <include name="DeleteLeadAccountTest" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="ConvertLeadTest" invocation-numbers="2 3 1 0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.ddf.zoho.testcases.LeadTest -->
+    </classes>
+  </test> <!-- Lead Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
